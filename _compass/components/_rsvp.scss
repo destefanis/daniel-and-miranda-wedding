@@ -13,17 +13,18 @@
 
 .form-submission-message {
   height: 0px;
-  padding: rhythm(2);
+  max-height: 0px;
   display: inline-block;
   color: $white;
   text-align: center;
   margin: auto;
   text-transform: uppercase;
   background: $primary;
-  transition: height 0.3s ease;
+  transition: max-height 0.3s ease;
 
   .is-active {
-    height: 60px;
+    max-height: 60px;
+    padding: rhythm(2);
   }
 }
 
