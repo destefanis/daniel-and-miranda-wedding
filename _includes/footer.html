@@ -16,7 +16,6 @@ $('#rsvp__form').submit(function(){
     data: $('#rsvp__form').serialize() 
   }).done(function() {
     $('.form-submission-message').addClass('is-active');
-    alert("Thank you, for RSVP'ing!");
   });
   return false; // to stop the form from submitting
 });
