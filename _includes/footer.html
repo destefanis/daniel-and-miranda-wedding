@@ -6,3 +6,15 @@
     </span>
   </div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+  $.ajax({
+    dataType: 'jsonp',
+    url: "http://getsimpleform.com/messages/ajax?form_api_token=a1846af5b6d1a65e4c62f5dfc951f4a9"
+  }).done(function() {
+    //callback which can be used to show a thank you message
+    //and reset the form
+    alert("Thank you for your RSVP submission!");
+  });
+</script>
