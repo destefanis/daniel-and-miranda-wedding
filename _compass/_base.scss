@@ -1,0 +1,104 @@
+// Base styles
+
+html {
+  @include adjust-leading-to(4.75);
+  background: $white;
+  color: $black;
+  text-rendering: optimizeLegibility;
+  font-family: $base-font-family;
+  font-size: 100% * ($base-font-size / 16px);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  @include breakpoint($mobile) { 
+    font-size: ($base-font-size / 16px) * 100%;
+  }
+
+  @include breakpoint($tablet) { 
+    font-size: ($base-font-size / 16px) * 105%;
+  }
+
+  @include breakpoint($desktop) { 
+    font-size: ($base-font-size / 16px) * 110%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  transition: all $easing $timing;
+}
+
+a:link,
+a:visited {
+  color: $primary;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: $primary-lt;
+  text-decoration: underline;
+}
+
+// Base heading styles
+h1 {
+  @include adjust-font-size-to($h1-font-size, 12);
+  @include leader(4, $h1-font-size);
+  @include trailer(3, $h1-font-size);
+  font-weight: 300;
+  color: $black;
+}
+
+h2 {
+  @include adjust-font-size-to($h2-font-size, 3);
+  @include leader(4, $h2-font-size);
+  @include trailer(3, $h2-font-size);
+  font-weight: 300;
+}
+
+h3 {
+  @include adjust-font-size-to($h3-font-size, 4);
+  @include leader(4, $h3-font-size);
+  @include trailer(2, $h3-font-size);
+  font-weight: 400;
+}
+
+h4 {
+  @include adjust-font-size-to($h4-font-size, 4);
+  @include leader(4, $h4-font-size);
+  @include trailer(2, $h4-font-size);
+  font-weith: 700;
+}
+
+h5 {
+  @include adjust-font-size-to($h5-font-size, 3.5);
+  @include leader(3, $h5-font-size);
+  @include trailer(1, $h5-font-size);
+  font-weight: 700;
+}
+
+h6 {
+  @include adjust-font-size-to($h6-font-size, 3.5);
+  @include leader(3, $h6-font-size);
+  @include trailer(1, $h6-font-size);
+  font-weight: 900;
+}
+
+// Set 1 unit of vertical rhythm on the top and bottom margin.
+p {
+  @include adjust-font-size-to($text, 2.5);
+  margin: 0 0 rhythm(0.75);
+}
+
+svg {
+  height: 16px;
+  width: 16px;
+  fill: $dark;
+}

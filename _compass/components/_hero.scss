@@ -1,0 +1,52 @@
+/**
+ * @file
+ * Define the hero component
+ */
+
+.wrapper {
+  background: $gray;
+}
+
+.wrapper--content {
+  background: $white;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero__logo {
+  margin-top: rhythm(1.5);
+
+  svg {
+    width: 520px;
+    height: auto;
+    margin-left: -40px;
+  }
+}
+
+.hero-header__title {
+  @include adjust-font-size-to(2.25em);
+  margin: rhythm(1) 0 0;
+  font-family: $sans;
+  color: $dark;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.hero-header__subtitle {
+  @include adjust-font-size-to(1.5em);
+  margin-top: rhythm(0.75);
+  margin-bottom: 0;
+  font-family: $sans-alt;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400px;
+}
+
+.hr--hero {
+  width: 22%;
+  margin: rhythm(2.5) auto;
+  border: 1px solid $dark;
+  border-radius: 2px;
+}

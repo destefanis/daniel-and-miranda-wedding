@@ -1,0 +1,40 @@
+/**
+ * @file
+ * Layout rules for two thirds / one third (66/33) content
+ */
+
+.l-66-33--1 {
+  @include zen-clear(left);
+  @include zen-grid-item(12, 1);
+  @include breakpoint($mobile) {
+    @include zen-grid-item(8, 1);
+  }
+}
+
+.l-66-33--2 {
+  @include zen-clear(both);
+  @include zen-grid-item(12, 1);
+  @include breakpoint($mobile) {
+    @include zen-clear(right);
+    @include zen-grid-item(4, 1, right);
+  }
+}
+
+.l-66-33-nested--1 {
+  @include zen-clear(left);
+  @include zen-nested-container();
+  @include zen-grid-item(12, 1);
+  @include breakpoint($mobile) {
+    @include zen-grid-item(8, 1);
+  }
+}
+
+.l-66-33-nested--2 {
+  @include zen-clear(both);
+  @include zen-nested-container();
+  @include zen-grid-item(12, 1);
+  @include breakpoint($mobile) {
+    @include zen-clear(right);
+    @include zen-grid-item(4, 1, right);
+  }
+}

@@ -1,0 +1,27 @@
+/**
+ * @file
+ * Define the hero component
+ */
+
+.site-nav {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.site-nav__list-item {
+  display: inline-block;
+  padding: 0 rhythm(1.5);
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.site-nav__list-item-link {
+  font-famiy: $sans;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+}

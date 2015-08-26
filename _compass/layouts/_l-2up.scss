@@ -1,0 +1,45 @@
+/**
+ * @file
+ * Layout rules for 2-up content
+ */
+
+.l-2up {
+  @include zen-grid-item-base();
+  @include zen-grid-flow-item(12, 12, $omega-gutter: false);
+  float: left;
+
+  @include breakpoint($tablet) {
+    @include zen-grid-flow-item(6, 12, $omega-gutter: true);
+  }
+}
+
+.l-2up:nth-of-type(2n) {
+  @include breakpoint($tablet) {
+    @include zen-grid-flow-item(6, 12, $omega-gutter: false);
+  }
+}
+
+.l-2up:nth-of-type(2n+1) {
+  @include breakpoint($tablet) {
+    @include zen-clear();
+  }
+}
+
+.l-2up--1 {
+  @include zen-clear();
+  @include zen-grid-item(12, 1);
+
+  @include breakpoint($mobile) {
+    @include zen-grid-item(6, 1);
+  }
+}
+
+.l-2up--2 {
+  @include zen-clear();
+  @include zen-grid-item(12, 1);
+
+  @include breakpoint($mobile) {
+    @include zen-clear(none);
+    @include zen-grid-item(6, 7);
+  }
+}

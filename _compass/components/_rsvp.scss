@@ -1,0 +1,92 @@
+/**
+ * @file
+ * Define the rsvp form component
+ */
+
+.site-footer {
+  padding: rhythm(2);
+  color: $dark;
+  text-align: center;
+  font-size: $label;
+  text-transform: uppercase;
+}
+
+ .callout--rsvp {
+  text-align: center;
+  padding: rhythm(2);
+ }
+
+.rvsp__form {
+  max-width: 520px;
+  margin: auto;
+  padding: rhythm(2) 0;
+  text-align: left;
+  
+  input {
+    border: 0;
+    border-bottom: 1px solid $dark;
+    background: none;
+    margin: rhythm(1);
+    padding: rhythm(0.5);
+    font-size: $text;
+    font-family: $sans;
+    letter-spacing: 1px;
+
+    &:focus {
+      outline: 2px solid $primary;
+    }
+  }
+
+  input[type='email'] {
+    margin-left: rhythm(0.75);
+
+    &:focus {
+      outline: 2px solid $primary;
+    }
+  }
+
+  input.form__button {
+    padding: rhythm(1) rhythm(1.5);
+    text-transform: uppercase;
+    background: $primary;
+    border-radius: 0;
+    border: 0;
+    color: $white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: $dark;
+    }
+  }
+
+  select {
+    border: 0;
+    background: $gray;
+    height: rhythm(3);
+    font-size: $text;
+    font-family: $sans;
+    margin: 0 rhythm(0.5);
+    color: $dark;
+
+    &:focus {
+      outline: 2px solid $primary;
+    }
+  }
+}
+
+.form-group {
+  display: block;
+  padding: rhythm(.5) 0;
+}
+
+.form-group--submit {
+  margin-top: rhythm(1);
+  text-align: center;
+}
+
+.form__text {
+  display: inline;
+}

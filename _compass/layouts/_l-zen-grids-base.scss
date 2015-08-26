@@ -1,0 +1,44 @@
+/**
+ * @file
+ * Define zen grids base settings here.
+ * @see http://zengrids.com
+ */
+
+$zen-column-count: 12;
+$zen-gutter-width: $base-line-height * 4;
+$zen-auto-include-item-base: true;
+
+.container {
+  @include zen-grid-container();
+  min-width: 260px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
+
+  @include breakpoint(400px) {
+    width: 90%;
+  }
+
+  @include breakpoint($tablet) {
+    max-width: 900px;
+  }
+
+  @include breakpoint($desktop) {
+    max-width: 1100px;
+  }
+}
+
+.container--full {
+  max-width: none;
+  width: 100%;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container,
+.grid-item {
+  @include zen-grid-item-base();
+}
+

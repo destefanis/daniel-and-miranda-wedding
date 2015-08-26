@@ -1,0 +1,57 @@
+/**
+ * @file
+ * Define the list component
+ */
+
+.wedding-party {
+  padding: rhythm(4) 0 rhythm(8);
+  letter-spacing: 3px;
+}
+
+.party__title {
+  margin-bottom: rhythm(2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.party__list {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-size: 0;
+}
+
+.party__list-item {
+  display: inline-block;
+  padding: rhythm(1.75);
+  width: 38%;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px solid $dark;
+  list-style: none;
+  font-size: $text;
+
+  &:nth-child(odd) {
+    border-right: 2px solid $dark;
+  }
+}
+
+.party__list-item--first,
+.party__list-item--second {
+  border-bottom: 2px solid $dark;
+  padding-bottom: rhythm(2.25);
+
+  &:nth-child(odd) {
+    border-right: 0;
+  }
+}
+
+.party__list-item-title {
+  display: block;
+  margin-top: -10px;
+  line-height: 0.8em;
+  font-size: $label;
+  font-family: $sans-alt;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

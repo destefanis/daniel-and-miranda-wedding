@@ -1,0 +1,92 @@
+/**
+ * @file
+ * Define the callout component
+ */
+
+.callout {
+  position: relative;
+  padding: rhythm(4);
+  background: $primary;
+  text-align: center;
+  color: #fff;
+  overflow: hidden; 
+
+  a {
+    &:link,
+    &:visited {
+      color: $dark;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+    }
+  }
+}
+
+.content-band {
+  padding: rhythm(4);
+}
+
+.callout__row {
+  margin-top: rhythm(3);
+}
+
+.callout__row--brunch {
+  margin-top: rhythm(6);
+}
+
+.callout__header {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: rhythm(0.5);
+  margin-bottom: 0;
+}
+
+.callout__body {
+  max-width: 540px;
+  margin: auto;
+  font-family: $serif;
+}
+
+.callout__icon svg {
+  width: 80px;
+  height: auto;
+}
+
+.icon--coffee {
+  svg {
+    fill: $white;
+    stroke: $white;
+  }
+}
+
+.flowers--right {
+  svg {
+    position: absolute;
+    top: 15px;
+    left: -6%;
+    width: 200px;
+    height: auto;
+    transform: scaleX(-1);
+
+    path {
+      fill: $white;
+    }
+  }
+}
+
+.flowers--left {
+  svg {
+    position: absolute;
+    top: 15px;
+    right: -6%;
+    width: 200px;
+    height: auto;
+
+    path {
+      fill: $white;
+    }
+  }
+}

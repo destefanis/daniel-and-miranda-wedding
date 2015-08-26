@@ -1,0 +1,79 @@
+/**
+ * @file
+ * Layout rules for 4-up content
+ */
+
+.l-4up {
+  @include zen-grid-item-base();
+  @include zen-grid-flow-item(12, 12, $omega-gutter: false);
+  float: left;
+
+  @include breakpoint($mobile) {
+    @include zen-grid-flow-item(6, 12, $omega-gutter: true);
+  }
+
+  @include breakpoint($desktop) {
+    @include zen-grid-flow-item(3, 12, $omega-gutter: true);
+  }
+}
+
+.l-4up:nth-of-type(2n) {
+  @include breakpoint($mobile) {
+    @include zen-grid-flow-item(6, 12, $omega-gutter: false);
+  }
+
+  @include breakpoint($desktop) {
+    @include zen-grid-flow-item(3, 12, $omega-gutter: true);
+  }
+}
+
+.l-4up:nth-of-type(4n) {
+  @include breakpoint($desktop) {
+    @include zen-grid-flow-item(3, 12, $omega-gutter: false);
+  }
+}
+
+.l-4up:nth-of-type(4n+1) {
+  @include breakpoint($desktop) {
+    @include zen-clear();
+  }
+}
+
+.l-4up--1 {
+  @include zen-clear();
+  @include zen-grid-item(12, 1);
+
+  @include breakpoint($mobile) {
+    @include zen-grid-item(3, 1);
+  }
+}
+
+.l-4up--2 {
+  @include zen-clear();
+  @include zen-grid-item(12, 1);
+
+  @include breakpoint($mobile) {
+    @include zen-clear(none);
+    @include zen-grid-item(3, 4);
+  }
+}
+
+.l-4up--3 {
+  @include zen-clear();
+  @include zen-grid-item(12, 1);
+
+  @include breakpoint($mobile) {
+    @include zen-clear(none);
+    @include zen-grid-item(3, 7);
+  }
+}
+
+.l-4up--4 {
+  @include zen-clear();
+  @include zen-grid-item(12, 1);
+
+  @include breakpoint($mobile) {
+    @include zen-clear(none);
+    @include zen-grid-item(3, 10);
+  }
+}

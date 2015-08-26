@@ -1,0 +1,85 @@
+/**
+ * @file
+ * Define the info block components.
+ */
+
+.venue,
+.details {
+  padding: rhythm(6) 0;
+}
+
+.info-block {
+  text-align: center;
+}
+
+.info-block__title {
+  @include adjust-font-size-to(1.5em);
+  margin: rhythm(1.5) 0 rhythm(1.5);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.info-block__body {
+  font-family: $serif;
+}
+
+.info-block__icon {
+  z-index: 3;
+  position: relative;
+  text-align: center;
+
+  svg {
+    z-index: 3;
+    fill: $dark;
+  }
+}
+
+.info-block__icon--rings {
+
+  svg {
+    stroke: $dark;
+    position: relative;
+    top: 20px;
+    left: 4px;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+  }
+}
+
+.info-block__icon--building {
+
+  svg {
+    position: relative;
+    top: -5px;
+    left: 3px;
+    height: 170px;
+    width: 170px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 38%;
+    height: 168px;
+    width: 116px;
+    z-index: 2;
+    margin: 0 auto;
+    background: $white;
+  }
+}
+
+.info-diamond {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 30%;
+  display: block;
+  height: 175px;
+  width: 175px;
+  background: $primary;
+  transform: rotate(45deg);
+  content: "";
+}

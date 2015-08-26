@@ -1,0 +1,56 @@
+
+$base-font-size: 16px;
+$base-line-height: 10px;
+
+$mobile: 600px;
+$tablet: 900px;
+$desktop: 1100px;
+
+$display: 5 * $base-font-size;
+$xl-heading: 2.07 * $base-font-size;
+$large-heading: 1.73 * $base-font-size;
+$medium-heading: 1.44 * $base-font-size;
+$small-heading: 1.2 * $base-font-size;
+$text: 1 * $base-font-size;
+$label: 0.83  * $base-font-size;
+$meta: 0.65  * $base-font-size;
+$crumb: 0.58  * $base-font-size;
+
+$h1-font-size: $large-heading;
+$h2-font-size: $medium-heading;
+$h3-font-size: $small-heading;
+$h4-font-size: $text;
+$h5-font-size: $label;
+$h6-font-size: $label;
+
+$helvetica: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$serif: 'Neuton', serif;;
+$sans: 'Montserrat', $helvetica;
+$sans-alt:  'Oswald', $helvetica;
+
+// Oswald or Abel
+
+$base-font-family: $sans;
+
+// Color variables.
+$black: #222222;
+$white: #ffffff;
+$gray: #f5f5f5;
+
+$primary: #ef8460;
+$primary-lt: #f3a186;
+$secondary: #346633;
+$dark: #222c3d;
+
+// Animation variables.
+$timing: .5s;
+$easing: ease;
+
+@import "compass/css3";
+// Vertical Rhythm
+@import "compass/typography/vertical_rhythm";
+// Zen Grids
+@import "zen";
+// Breakpoint mixin
+@import "breakpoint";
+
