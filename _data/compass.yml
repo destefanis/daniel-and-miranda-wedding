@@ -3,7 +3,7 @@ require:
 - jekyll-compass
 - zen-grids
 - breakpoint
-project_path: "/Users/danieldestefanis/Documents/local/wedding/wedding"
+project_path: "/Users/danieldestefanis/Documents/local/wedding/daniel-and-miranda-wedding/"
 http_path: "/"
 css_dir: css
 sass_dir: _compass

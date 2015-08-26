@@ -11,6 +11,22 @@
   text-transform: uppercase;
 }
 
+.form-submission-message {
+  height: 0px;
+  padding: rhythm(2);
+  display: inline-block;
+  color: $white;
+  text-align: center;
+  margin: auto;
+  text-transform: uppercase;
+  background: $primary;
+  transition: height 0.3s ease;
+
+  .is-active {
+    height: 60px;
+  }
+}
+
  .callout--rsvp {
   text-align: center;
   padding: rhythm(2);
