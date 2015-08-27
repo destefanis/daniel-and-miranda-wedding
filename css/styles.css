@@ -453,27 +453,29 @@ svg {
   text-transform: uppercase;
   background: #ef8460;
   transition: max-height 0.3s ease;
+  overflow: hidden;
 }
-/* line 25, ../../_compass/components/_rsvp.scss */
+/* line 26, ../../_compass/components/_rsvp.scss */
 .form-submission-message .is-active {
+  height: auto;
   max-height: 60px;
   padding: 1.25em;
 }
 
-/* line 31, ../../_compass/components/_rsvp.scss */
+/* line 33, ../../_compass/components/_rsvp.scss */
 .callout--rsvp {
   text-align: center;
   padding: 1.25em;
 }
 
-/* line 36, ../../_compass/components/_rsvp.scss */
+/* line 38, ../../_compass/components/_rsvp.scss */
 .rvsp__form {
   max-width: 520px;
   margin: auto;
   padding: 1.25em 0;
   text-align: left;
 }
-/* line 42, ../../_compass/components/_rsvp.scss */
+/* line 44, ../../_compass/components/_rsvp.scss */
 .rvsp__form input {
   border: 0;
   border-bottom: 1px solid #222c3d;
@@ -484,19 +486,19 @@ svg {
   font-family: "Montserrat", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   letter-spacing: 1px;
 }
-/* line 52, ../../_compass/components/_rsvp.scss */
+/* line 54, ../../_compass/components/_rsvp.scss */
 .rvsp__form input:focus {
   outline: 2px solid #ef8460;
 }
-/* line 57, ../../_compass/components/_rsvp.scss */
+/* line 59, ../../_compass/components/_rsvp.scss */
 .rvsp__form input[type='email'] {
   margin-left: 0.46875em;
 }
-/* line 60, ../../_compass/components/_rsvp.scss */
+/* line 62, ../../_compass/components/_rsvp.scss */
 .rvsp__form input[type='email']:focus {
   outline: 2px solid #ef8460;
 }
-/* line 65, ../../_compass/components/_rsvp.scss */
+/* line 67, ../../_compass/components/_rsvp.scss */
 .rvsp__form input.form__button {
   padding: 0.625em 0.9375em;
   text-transform: uppercase;
@@ -507,11 +509,11 @@ svg {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-/* line 75, ../../_compass/components/_rsvp.scss */
+/* line 77, ../../_compass/components/_rsvp.scss */
 .rvsp__form input.form__button:hover, .rvsp__form input.form__button:active, .rvsp__form input.form__button:focus {
   background: #222c3d;
 }
-/* line 82, ../../_compass/components/_rsvp.scss */
+/* line 84, ../../_compass/components/_rsvp.scss */
 .rvsp__form select {
   border: 0;
   background: #f5f5f5;
@@ -521,24 +523,24 @@ svg {
   margin: 0 0.3125em;
   color: #222c3d;
 }
-/* line 91, ../../_compass/components/_rsvp.scss */
+/* line 93, ../../_compass/components/_rsvp.scss */
 .rvsp__form select:focus {
   outline: 2px solid #ef8460;
 }
 
-/* line 97, ../../_compass/components/_rsvp.scss */
+/* line 99, ../../_compass/components/_rsvp.scss */
 .form-group {
   display: block;
   padding: 0.3125em 0;
 }
 
-/* line 102, ../../_compass/components/_rsvp.scss */
+/* line 104, ../../_compass/components/_rsvp.scss */
 .form-group--submit {
   margin-top: 0.625em;
   text-align: center;
 }
 
-/* line 107, ../../_compass/components/_rsvp.scss */
+/* line 109, ../../_compass/components/_rsvp.scss */
 .form__text {
   display: inline;
 }
