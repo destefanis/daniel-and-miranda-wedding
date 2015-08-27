@@ -20,13 +20,21 @@
   margin: auto;
   text-transform: uppercase;
   background: $primary;
-  transition: max-height 0.3s ease;
+  transition: all 0.3s ease;
   overflow: hidden;
+  opacity: 0;
+
+  h4 {
+    margin: 0;
+    line-height: 0;
+  }
 
   &.is-active {
+    opacity: 1;
     height: auto;
-    max-height: 60px;
+    max-height: 20px;
     padding: rhythm(2);
+    margin-top: rhythm(2);
   }
 }
 
