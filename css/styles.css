@@ -456,7 +456,7 @@ svg {
   overflow: hidden;
 }
 /* line 26, ../../_compass/components/_rsvp.scss */
-.form-submission-message .is-active {
+.form-submission-message.is-active {
   height: auto;
   max-height: 60px;
   padding: 1.25em;

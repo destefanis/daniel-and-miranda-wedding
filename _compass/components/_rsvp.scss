@@ -23,7 +23,7 @@
   transition: max-height 0.3s ease;
   overflow: hidden;
 
-  .is-active {
+  &.is-active {
     height: auto;
     max-height: 60px;
     padding: rhythm(2);
