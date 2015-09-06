@@ -8,12 +8,26 @@
   margin: 0 auto;
 }
 
+.site-nav__list {
+  margin: rhythm(2) 0 rhythm(0.5);
+  padding: 0;
+  font-size: 0.87em;
+}
+
 .site-nav__list-item {
   display: inline-block;
-  padding: 0 rhythm(1.5);
+  padding: 0;
   list-style: none;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  @include breakpoint($tablet) {
+    padding: 0 rhythm(1);
+  }
+
+  @include breakpoint($tablet) {
+    padding: 0 rhythm(2);
+  }
 }
 
 .site-nav__list-item-link {
@@ -22,6 +36,7 @@
 
   &:link,
   &:visited {
+    color: $black;
     text-decoration: none;
   }
 }

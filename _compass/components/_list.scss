@@ -9,9 +9,10 @@
 }
 
 .party__title {
-  margin-bottom: rhythm(2);
+  margin-bottom: rhythm(0.25);
   text-transform: uppercase;
   text-align: center;
+  font-weight: 600;
 }
 
 .party__list {
@@ -22,17 +23,26 @@
 }
 
 .party__list-item {
-  display: inline-block;
+  display: block;
   padding: rhythm(1.75);
-  width: 38%;
+  width: 100%;
   text-transform: uppercase;
   text-align: center;
   border-bottom: 2px solid $dark;
   list-style: none;
   font-size: $text;
+  letter-spacing: 2px;
+
+  @include breakpoint($tablet) {
+    display: inline-block;
+    width: 38%;
+  }
 
   &:nth-child(odd) {
-    border-right: 2px solid $dark;
+
+    @include breakpoint($tablet) {
+      border-right: 2px solid $dark;
+    }
   }
 }
 

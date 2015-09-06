@@ -9,6 +9,13 @@
 
 .wrapper--content {
   background: $white;
+  width: 100%;
+  padding: 0;
+
+  @include breakpoint($mobile) {
+    width: 90%;
+    padding: 0 20px;
+  }
 }
 
 .hero {
@@ -28,10 +35,11 @@
 .hero-header__title {
   @include adjust-font-size-to(2.25em);
   margin: rhythm(1) 0 0;
-  font-family: $sans;
   color: $dark;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
+  font-family: $sans;
+  font-weight: 600;
 }
 
 .hero-header__subtitle {
@@ -40,12 +48,12 @@
   margin-bottom: 0;
   font-family: $sans-alt;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-weight: 400px;
 }
 
 .hr--hero {
-  width: 22%;
+  width: 20%;
   margin: rhythm(2.5) auto;
   border: 1px solid $dark;
   border-radius: 2px;
