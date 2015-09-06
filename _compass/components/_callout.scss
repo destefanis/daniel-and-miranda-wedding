@@ -56,20 +56,29 @@
 }
 
 .icon--coffee {
+
   svg {
     fill: $white;
     stroke: $white;
   }
 }
 
+.callout__flowers {
+  position: absolute;
+  top: 15px;
+  width: 200px;
+  height: auto;
+}
+
 .flowers--right {
+
   svg {
-    position: absolute;
-    top: 15px;
-    left: -6%;
-    width: 200px;
-    height: auto;
+    left: -22%;
     transform: scaleX(-1);
+
+    @include breakpoint($tablet) {
+      left: -6%;
+    }
 
     path {
       fill: $white;
@@ -78,12 +87,13 @@
 }
 
 .flowers--left {
+
   svg {
-    position: absolute;
-    top: 15px;
-    right: -6%;
-    width: 200px;
-    height: auto;
+    right: -22%;
+
+    @include breakpoint($tablet) {
+      right: -6%;
+    }
 
     path {
       fill: $white;

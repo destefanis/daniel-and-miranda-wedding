@@ -13,14 +13,16 @@
 }
 
 .info-block__title {
-  @include adjust-font-size-to(1.5em);
-  margin: rhythm(1.5) 0 rhythm(1.5);
+  @include adjust-font-size-to(1.2em);
+  margin-bottom: rhythm(1);
   text-transform: uppercase;
   letter-spacing: 3px;
+  font-weight: 600;
 }
 
 .info-block__body {
-  font-family: $serif;
+  @include adjust-font-size-to($label);
+  font-family: $sans;
 }
 
 .info-block__icon {
@@ -40,7 +42,7 @@
     stroke: $dark;
     position: relative;
     top: 20px;
-    left: 4px;
+    left: 0;
     height: 120px;
     width: 120px;
     margin: 0 auto;
@@ -62,7 +64,7 @@
     display: block;
     position: absolute;
     top: -6px;
-    left: 38%;
+    left: 37%;
     height: 168px;
     width: 116px;
     z-index: 2;
