@@ -3,8 +3,8 @@ title: Daniel and Miranda Wedding
 email: drdestefanis@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Miranda and Daniel's wedding, October 10th 2015 in Chicago Illinois
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://destefanis.github.io/daniel-and-miranda-wedding/" # the base hostname & protocol for your site
+baseurl: "/daniel-and-miranda-wedding" # the subpath of your site, e.g. /blog/
+url: "http://destefanis.github.io/daniel-and-miranda-wedding" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  destefanis
 wedding_date: October 10th

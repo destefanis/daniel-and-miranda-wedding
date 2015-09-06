@@ -6,3 +6,18 @@
     </span>
   </div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+$('#rsvp__form').submit(function(){
+  $.ajax({
+    dataType: 'jsonp',
+    url: "http://getsimpleform.com/messages/ajax?form_api_token=a1846af5b6d1a65e4c62f5dfc951f4a9",
+    data: $('#rsvp__form').serialize() 
+  }).done(function() {
+    $('.form-submission-message').addClass('is-active');
+  });
+  return false; // to stop the form from submitting
+});
+
+</script>
